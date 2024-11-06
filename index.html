@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Click Speed Test</h1>
+        <p class="instructions">Click as fast as you can within the selected time!</p>
+        
+        <div class="settings">
+            <label for="timeSelect">Test Duration:</label>
+            <select id="timeSelect">
+                <option value="5">5 Seconds</option>
+                <option value="10">10 Seconds</option>
+                <option value="15">15 Seconds</option>
+                <option value="30">30 Seconds</option>
+            </select>
+        </div>
+        
+        <button id="startButton" class="start-btn">Start Test</button>
+        
+        <div id="clickArea" class="click-area">Click Here</div>
+        
+        <div id="testResult">
+            <p id="result">CPS: 0</p>
+            <p id="timer">Time: 0s</p>
+        </div>
+        
+        <button id="resetButton" class="reset-btn" style="display: none;">Reset Test</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
